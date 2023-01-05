@@ -1,0 +1,12 @@
+name: workflow
+
+on: push
+jobs:
+  build:
+    run-ons: ubuntu-latest
+    steps:
+     - uses: action/checkout@V3
+     
+     - name: Run a Simple github comand
+     - run: echo "This is good platform"
+     
